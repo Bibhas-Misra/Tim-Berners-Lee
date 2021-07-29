@@ -61,22 +61,25 @@ body {
 .menu {
     list-style: none;
     position: fixed;
-    top: 10px;
-    right: 30px;
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    background-color: red;
     cursor: pointer;
     z-index: 10;
 }
 
 .link {
-    float: left;
+    display: inline;
     color: blue;
-    padding: 7px;
+    padding: 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
 
 .link:hover {
-    background-color: orange;
+    font-size: 28px;
+    text-decoration: underline;
 }
 
 html {
@@ -85,4 +88,25 @@ html {
 
 a {
     text-decoration: none;
+    text-shadow: 2px 2px gainsboro;
+}
+
+#writings a {
+    text-shadow: none !important;
+    text-decoration: underline;
+    color: blue !important;
+}
+
+#contact {
+    background-color: firebrick;
+}
+
+#contact iframe {
+    width: 100%;
+}
+
+#contact a {
+    text-shadow: none !important;
+    text-decoration: underline;
+    color: blue !important;
 }
